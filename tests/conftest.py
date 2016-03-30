@@ -1,12 +1,12 @@
 import pytest
 
-from appname import create_app
-from appname.models import db, User
+from sql_duplicater import create_app
+from sql_duplicater.models import db, User
 
 
 @pytest.fixture()
 def testapp(request):
-    app = create_app('appname.settings.TestConfig')
+    app = create_app('sql_duplicater.settings.TestConfig')
     client = app.test_client()
 
     db.app = app

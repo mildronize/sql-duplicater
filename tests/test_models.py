@@ -3,7 +3,7 @@
 
 import pytest
 
-from appname.models import db, User
+from sql_duplicater.models import db, User
 
 create_user = False
 
